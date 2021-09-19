@@ -1,4 +1,4 @@
-<h1>Environment</h1>
+<h1>Suckless Stuff</h1>
 
 <h3>Included: </h3>
 <ul>
