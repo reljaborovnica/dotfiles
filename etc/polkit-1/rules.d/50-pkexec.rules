@@ -1,0 +1,9 @@
+polkit.addRule(function(action, subject) {
+  var YES = polkit.Result.YES;
+  var permission = {
+    "org.freedesktop.policykit.exec": YES
+  };
+  if (subject.isInGroup("adm")) {
+    return permission[action.id];
+  }
+});
