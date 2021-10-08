@@ -102,10 +102,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-###aliases###
-
-##etc##
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[cyan]%}%M %{$fg[green]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+#aliases
 alias ls='lsd'
 alias nano='nano -l'
 alias c='clear'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+alias cat='bat'
+alias coronaserbia='curl https://corona-stats.online/serbia'
+alias coronaamerica='curl https://corona-stats.online/US'
+alias coronausa='curl https://corona-stats.online/states/us'
+alias coronaglobal='curl https://corona-stats.online | less'
+alias calc='gnome-calculator'
+alias scan="scanimage --device=escl:http://10.1.2.19:80 --format=jpeg  --output-file"
+
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
+export LESS='-R --use-color -Dd+r$Du+b'
+export EDITOR='nano'
+export BROWSER='brave'
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/Bin"
