@@ -1,5 +1,13 @@
+xfce4-power-manager &
+
+###Polkit
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 ###Transparency
 xcompmgr &
+
+###SS
+flameshot &
 
 ###Notifications
 dunst &
@@ -8,11 +16,8 @@ dunst &
 #/home/rblue/dwm-bar/dwm_bar.sh
 slstatus &
 
-###SS
-flameshot &
-
 ###Background
-feh --bg-scale ~/Relja/Pictures/wp5.jpg
+feh --bg-scale ~/Relja/Pictures/wp4.jpg
 
 ###Auto Mount
 udiskie &
