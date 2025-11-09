@@ -10,8 +10,9 @@ ETH_IP=$(ip -4 addr show "$ETH_INTERFACE" | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 ETH_SPEED=$(cat /sys/class/net/"$ETH_INTERFACE"/speed 2>/dev/null || echo "N/A")
 
 if [[ -n "$ETH_IP" ]]; then
-    echo "󰌘  $ETH_IP"
+    echo "🏠 $ETH_IP"
 else
-    echo "󰌘 No Internet"
+    echo "🏠 No Internet"
 fi
 
+#󰌘  

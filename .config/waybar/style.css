@@ -3,8 +3,8 @@
   min-width: 0;
   /* font-family: Lexend, "JetBrainsMono NFP"; */
   font-family: Lexend, "Ubuntu Mono Nerd Font";
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 window#waybar {
@@ -17,31 +17,87 @@ window#waybar {
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
-#workspaces button {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
-  /* background-color: #181825; #1e1e2e*/
-  background-color: #1e222c;
-  color: #cdd6f4;
+
+#workspaces {
+    background-color: #1e222c;
+    padding: 2px 1px;
+    border-radius: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border: 0.5px solid #032412;
 }
 
-#workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+#workspaces button {
+    padding: 0px 5px;
+    margin: 0px 3px;
+    border-radius: 16px;
+    color: #cdd6f4;
+    background-color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#workspaces button.empty {
+    opacity: 1;
+    background-color: inherit;
+    color: darkgray;
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
-  color: #89b4fa;
+    color: #2f354a;
+    background-color: #cdd6f4;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+    /*opacity: 1.0;*/
 }
 
 #workspaces button.urgent {
-  background-color: #1e1e2e;
-  color: #f38ba8;
+    background-color: #cdd6f4;
+    color: #2f354a;
+    padding: 0 0 0 5px;
+    border-radius: 16px;
+    min-width: 40px;
+    background-size: 300% 300%;
 }
 
-#clock,
+#workspaces button:hover {
+    background-color: #cdd6f4;
+    color: #2f354a;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+/* #workspaces button { */
+/*   margin: 0.4rem 0.25rem; */
+/*   border-radius: 6px; */
+/*   background-color: #1e222c; */
+/*   color: #cdd6f4; */
+/* } */
+/* #workspaces button.empty { */
+/* 	color:  #85909e; */
+/* } */
+/**/
+/* #workspaces button:hover { */
+/*   color: #1e1e2e; */
+/*   background-color: #cdd6f4; */
+/* } */
+/**/
+/* #workspaces button.active { */
+/*   background-color: #1e1e2e; */
+/*   color: #89b4fa; */
+/* } */
+/**/
+/* #workspaces button.urgent { */
+/*   background-color: #1e1e2e; */
+/*   color: #f38ba8; */
+/* } */
+
+/*#clock,*/
+/*#clock#simpleclock,*/
 #pulseaudio,
 #custom-logo,
 #custom-power,
@@ -49,6 +105,8 @@ window#waybar {
 #custom-notification,
 #custom-ethernet,
 #custom-fullcpu,
+#custom-weather,
+#power-profiles-daemon,
 #cpu,
 #tray,
 #memory,
@@ -86,22 +144,22 @@ window#waybar.empty #window {
 #cpu {
   color: #94e2d5;
 }
-
-#custom-fullcpu{
-  color: #94e2d5;
-}
+/**/
+/* #custom-fullcpu{ */
+/*   color: #94e2d5; */
+/* } */
 
 #memory {
   color: #cba6f7;
 }
 
-#clock {
-  color: #74c7ec;
-}
-
-#clock.simpleclock {
-  color: #89b4fa;
-}
+/* #clock { */
+/*   color: #74c7ec; */
+/* } */
+/**/
+/* #clock.simpleclock { */
+/*   color: #89b4fa; */
+/* } */
 
 #window {
   color: #cdd6f4;

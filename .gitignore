@@ -1,0 +1,12 @@
+.config/tmux/plugins/tmux-logging
+.config/tmux/plugins/tmux-sensible
+.config/tmux/plugins/tmux-tokyo-night
+.config/tmux/plugins/tpm
+.config/tmux/plugins/vim-tmux-navigator
+Wallpapers/.cache/wallpaper_index.txt
+Wallpapers/.cache/wallpaper_list.txt
+.config/gtk-3.0/bookmarks
+.config/gtk-3.0/colors.css
+.config/gtk-3.0/gtk.css
+.config/gtk-4.0/colors.css
+.config/zsh/.zcompdump

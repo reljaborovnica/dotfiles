@@ -3,7 +3,7 @@
 # Function to simplify device names
 get_clean_name() {
     case "$1" in
-        *Razer*Barracuda*) echo "Razer Barracuda X" ;;
+        *HyperX*) echo "Hyper X Cloud III" ;;
         *hdmi*)            echo "BenQ EX2710Q HDMI" ;;
         *iec958-stereo*) echo "IEC958" ;;
         *)                 echo "$1" ;;
@@ -13,7 +13,7 @@ get_clean_name() {
 # Function to get appropriate icon
 get_device_icon() {
     case "$1" in
-        *Razer*Barracuda*) echo "audio-headphones" ;;
+        *HyperX*) echo "audio-headphones" ;;
         *hdmi*)            echo "video-display" ;;
         *iec958-stereo*)          echo "audio-card" ;;
         *)                 echo "audio-card" ;;  
