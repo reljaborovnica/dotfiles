@@ -13,19 +13,19 @@ window#waybar {
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
   /* background-color: #11111b; */
-  background-color: #121619;
-  /* background-color: rgba(24, 24, 37, 0.6); */
+ /* background-color: #121619;*/
+   background-color: rgba(18, 22, 25, 1); 
 }
 
 
 #workspaces {
-    background-color: #1e222c;
+    background-color: #212630; /* 20242e, original: #1e222c*/
     padding: 2px 1px;
     border-radius: 18px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
-    border: 0.5px solid #032412;
+    border: 0.2px solid #cdd6f4;
 }
 
 #workspaces button {
@@ -117,7 +117,9 @@ window#waybar {
 
   border-radius: 6px;
   /* background-color: #181825; #1e1e2e #232732 #1e222c #1c2029 */
-  background-color: #1e222c;
+    border: 0.2px solid #cdd6f4;
+    background-color: #212630; /* 20242e, original: #1e222c*/
+
 }
 
 #custom-ethernet {
@@ -182,6 +184,6 @@ window#waybar.empty #window {
 }
 
 tooltip {
-  background-color: #181825;
-  border: 2px solid #89b4fa;
+  background-color: #121619;
+  border: 2px solid #212630;
 }
